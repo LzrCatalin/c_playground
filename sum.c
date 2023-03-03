@@ -4,8 +4,8 @@ int main()
 {
     int a, b, sum = 0;
 
-    a = 10;
-    b = 20;
+    scanf("%d", &a);
+    scanf("%d", &b);
 
     sum = a + b;
 
