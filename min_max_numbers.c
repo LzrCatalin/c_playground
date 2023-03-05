@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 
 // Print maxim of positiv numbers and minim of the negativ numbers
@@ -21,19 +22,28 @@ int main() {
 
         if (number > 0 && number > maxim) {
             maxim = number;
-        }
-
+        } 
+        
         if (number < 0 && number < minim) {
             minim = number;
         }
-        
+
         how_many_numbers--;
 
     }
 
     // Print result
-    printf("Max positiv number:%d\n", maxim);
-    printf("Minim negativ number:%d\n", minim);
+    if (maxim != 0) {
+        printf("Maximum of positive numbers:%d\n", maxim);
+    } else {
+        printf("nu exista\n");
+    }
+
+    if (minim != 0) {
+        printf("Minimum of negative numbers:%d\n", minim);
+    } else {
+        printf("nu exista\n");
+    }
 
      return 0;
 
